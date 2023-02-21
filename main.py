@@ -6,13 +6,13 @@ from snowflake.snowpark.functions import avg, sum, col,lit
 
 def create_session_object():
    connection_parameters = {
-      "account": "ca60211.us-east4.gcp",
-      "user": "PYASHISHMHATRE",
-      "password": "!Ashish123",
-      "role": "SYSADMIN",
-      "warehouse": "COMPUTE_WH",
-      "database": "SPROCKET",
-      "schema": "PUBLIC"
+      "account": "",
+      "user": "",
+      "password": "",
+      "role": "",
+      "warehouse": "",
+      "database": "",
+      "schema": ""
    }
    session = Session.builder.configs(connection_parameters).create()
    return session
